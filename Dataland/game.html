@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const game = "Chess";
+      const winners = ["Mr.Tin", "Mr.June", "Ms.July"];
+      const getresult = winners.map((winner) => winner);
+      console.log(getresult);
+      const gg = winners.map((win, idx) => ({
+        name: win,
+        sport: game,
+        price: idx + 1,
+      }));
+      console.log(gg);
+
+      /* 8.Filter */
+      document.write("<h3>Filter Loop</h3>");
+      const ages = [20, 25, 21, 17, 35, 16, 50, 17, 11, 80, 12, 18, 15];
+      console.table(ages);
+      const getover18 = ages.filter((age) => {
+        return age >= 18;
+      });
+      console.log(getover18);
+    </script>
+  </body>
+</html>

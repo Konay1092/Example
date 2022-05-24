@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h3 {
+        text-decoration: underline;
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+      div {
+        width: 350px;
+
+        margin: 0 auto;
+      }
+      th {
+        background-color: yellow;
+      }
+      .he {
+        padding-left: 220px;
+      }
+      .re {
+        display: inline;
+        text-align: center;
+        margin-left: 280px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Welcome To 2020 Electoin</h3>
+    <p>Citizen ID:WDF 7598</p>
+    <hr />
+    <div>
+      <form action="">
+        <table border="1">
+          <th colspan="2">Election Form</th>
+          <tr>
+            <td><label for="leader">Leader Name:</label></td>
+            <td>
+              <input type="text" id="leader" placeholder="Enter Leader Name" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="name">Your Name:</label></td>
+            <td>
+              <input type="text" id="name" placeholder="Enter Your Name" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td>
+              <input type="text" id="email" placeholder="Enter Your Email" />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="code">Passcode:</label></td>
+            <td>
+              <input type="text" id="code" placeholder="Enter Your Passcode" />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="pa">Parties:</label></td>
+            <td>
+              <input type="radio" name="parties" />NLD
+              <input type="radio" name="parties" />USDP
+              <input type="radio" name="parties" />PPP
+            </td>
+          </tr>
+          <tr>
+            <td><label for="lo">Location:</label></td>
+            <td>
+              <select name="Location" id="lo">
+                <option value="1">Yangon</option>
+                <option value="2">Ayeyarwady</option>
+                <option value="3">Katchin</option>
+                <option value="4">Mandalay</option>
+                <option value="5" selected>Choose Division</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <input type="checkbox" name="checkbox" />
+              <label>I accept all the regultion of election community.</label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="he">
+              <input type="reset" value="Cancel" />
+              <input type="submit" value="Submit" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <hr />
+    <p class="re">Already regiester!</p>
+    <a href="#">Click here to login</a>
+  </body>
+</html>

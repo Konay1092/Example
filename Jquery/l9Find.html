@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        width: 500px;
+        background: #f4f4f4;
+        padding: 20px;
+        display: flex;
+      }
+      .box {
+        width: 100px;
+        height: 300px;
+        background-color: green;
+        margin: 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box b1"></div>
+      <div class="box b2"></div>
+      <div class="box b3"></div>
+      <div class="box"></div>
+    </div>
+    <script src="libs/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".container").click(function () {
+          /* console.log($(this).find(".b2")); */
+          $(this).find(".b2").css({
+            height: "200px",
+            "background-color": "orange",
+          });
+          $(this).find(".b2,.b1").css({
+            height: "200px",
+            "background-color": "orange",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

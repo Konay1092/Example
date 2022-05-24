@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Method</title>
+  </head>
+  <body>
+    <h1>This is awesome <u>js library</u></h1>
+    <h1>Save Myanmar.</h1>
+    <h1>pray Myanmar.</h1>
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+      // html vs texts
+      consoloe.log("hay");
+      $(document).ready(function () {
+        var getfirsth1 = $("h1:first").html();
+        $("h1:last").html(getfirsth1);
+      });
+    </script>
+  </body>
+</html>

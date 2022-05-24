@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Method</title>
+  </head>
+  <body>
+    <h1>Welcome jquery</h1>
+    <p>This is awesome js library.</p>
+    <button>Click Me</button>
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <script>
+      console.log("hay");
+      $(document).ready(function () {
+        consloe.log("hi");
+        consloe.log($("h1").html());
+        consloe.log($("p").html());
+        consloe.log($("button").html());
+        window.alert($("p").html());
+        $("button").click("click", function () {
+          /* documen.write("hay i am working"); */
+          /* $("h1").html("Hello Jquery");
+          $("h1").html("Hello <i>JQuery</i>"); */
+          $("h1").html("Hello <i style='color:red;'>JQuery</i>");
+        });
+      });
+    </script>
+  </body>
+</html>

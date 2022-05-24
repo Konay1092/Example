@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>l14Translate in 3D</title>
+    <style type="text/css">
+      .container {
+        perspective: 500px;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      img {
+        width: 300px;
+        transition: transform 2s;
+      }
+      img:hover {
+        transform: rotate(360deg);
+        /* transform: rotateX(360deg); */
+        /* transform: rotateY(120deg); */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="/CSS Animation/image/ab.jpg" alt="clock" />
+    </div>
+  </body>
+</html>

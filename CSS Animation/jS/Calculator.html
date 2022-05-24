@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #result {
+        font-size: 2em;
+        font-weight: bold;
+      }
+      label {
+        display: none;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Add Form</h1>
+    <div class="form">
+      <div>
+        <input type="text" id="a" /><br />
+        <label for="a">Please enter correct number</label>
+      </div>
+      <div>
+        <input type="text" id="b" /><br />
+        <label for="b">Please enter correct number</label>
+      </div>
+      <div id="result"></div>
+      <button id="add">Add</button>
+      <button id="difference">difference</button>
+    </div>
+    <script>
+      document.querySelector("#add").onclick = function () {
+        let a = parseInt(document.querySelector("#a").value);
+        console.log(typeof a);
+        let b = +document.querySelector("#b").value;
+        console.log(typeof b);
+        document.querySelector("#result").textContent = a + b;
+
+        if (isNaN(a)) {
+          document.querySelector("[for=a]").style.display = "inline";
+        }
+        if (isNaN(b)) {
+          document.querySelector("[for=b]").style.display = "inline";
+        }
+        if (!isNaN(result)) {
+          document.querySelector("#result").textContent = result;
+        }
+        document.querySelector("#a").onkeyup = function () {
+          let a = parseInt(document.querySelector("#a").value);
+          if (!isNaN(a)) {
+            document.querySelector("[for=a]").style.display = "none";
+          }
+        };
+        document.querySelector("#b").onkeyup = function () {
+          let a = parseInt(document.querySelector("#b").value);
+          if (!isNaN(a)) {
+            document.querySelector("[for=b]").style.display = "none";
+          }
+        };
+      };
+      document.querySelector("#difference").onclick = function () {
+        let a = parseInt(document.querySelector("#a").value);
+        console.log(typeof a);
+        let b = +document.querySelector("#b").value;
+        console.log(typeof b);
+        document.querySelector("#result").textContent = a - b;
+
+        if (isNaN(a)) {
+          document.querySelector("[for=a]").style.display = "inline";
+        }
+        if (isNaN(b)) {
+          document.querySelector("[for=b]").style.display = "inline";
+        }
+        if (!isNaN(result)) {
+          document.querySelector("#result").textContent = result;
+        }
+      };
+    </script>
+  </body>
+</html>

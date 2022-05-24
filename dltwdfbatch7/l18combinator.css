@@ -1,0 +1,38 @@
+div span {
+  color: red;
+  cursor: pointer;
+}
+span p {
+  color: blue;
+}
+div .address {
+  color: red;
+}
+div span .address {
+  color: aqua;
+}
+div span small .name {
+  color: red;
+}
+.money .currency {
+  color: red;
+}
+.bank .money .currency {
+  color: red;
+}
+.container p {
+  color: red;
+}
+.container b {
+  color: blue;
+}
+.container b span {
+  color: coral;
+}
+.mobile.jpn {
+  color: red;
+}
+.vehicle .car.jpn {
+  color: red;
+}
+9CB

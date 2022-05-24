@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Input Event</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        width: 500px;
+        background: #f4f4f4;
+        padding: 20px;
+      }
+      .form-group {
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <div class="form-group">
+          <label>First Name</label>
+          <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            class="form-control"
+            autocomplete="off"
+          />
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            class="form-control"
+            autocomplete="off"
+          />
+        </div>
+        <label for="country">Country :</label>
+        <select name="country" id="country">
+          <option value="myanmar">Myanmar</option>
+          <option value="Thailand">Thailand</option>
+        </select>
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            class="form-control"
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input
+            type="number"
+            name="phone"
+            id="phone"
+            class="form-control"
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="nrc">NRC</label>
+          <input type="text" name="nrc" id="nrc" />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="libs/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        console.log("ahy");
+        /*  $("#firstname").blur(function () {
+          console.log("first namer is working by blur");
+        }); */
+        /* $("#firstname").change(function () {
+           console.log("first namer is working by blur");
+         }); */
+        /* $("#firstname").focus(function () {
+          console.log("first namer is working by blur");
+        }); */
+        /* $("#lastname").focusin(function () {
+          console.log("last namer is working by blur");
+        });
+        $("#firstname").focusout(function () {
+          console.log("first namer is working by blur");
+        }); */
+
+        //select()
+
+        /*  $("input").select(function () {
+          console.log("You select  in some text");
+        }); */
+
+        //change()
+
+        /* $("select").change(function () {
+          console.log("You change to new Country");
+        }); */
+
+        //keydown()
+        /*  var q = 0;
+        $("#age").keydown(function () {
+          console.log("You change keydown");
+          console.log((q += 1));
+        }); */
+
+        //keyup
+        var a = 1;
+        $("#nrc").keyup(function () {
+          console.log("You change keyup");
+          console.log((a += 1));
+        });
+
+        //keypress
+        /* var x = 1;
+        $("#phone").keypress(function () {
+          console.log("You change keypress");
+          console.log((x += 1));
+        }); */
+
+        //submit
+
+        $("form").submit(function (e) {
+          console.log("Form submmited");
+          e.preventDefault();
+        });
+      });
+    </script>
+  </body>
+</html>
+<!-- 17IE -->

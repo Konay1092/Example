@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Translate in 3D</title>
+    <style type="text/css">
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        perspective: 500px;
+        perspective-origin: 50% bottom; /* default center
+        right
+        bottom
+        top
+        left
+        left top
+        left bottom
+        right top
+        right bottom
+        0 bottom/top
+        % bottom/top
+        px bottom/top
+        
+         */
+      }
+      img {
+        width: 300px;
+        transition: transform 2s;
+      }
+      img:hover {
+        transform: translateZ(300px);
+        /* transform: translateZ(-300px); */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="/CSS Animation/image/ab.jpg" alt="clock" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="libs/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        function showresult() {
+          var getfirstname = $("#firstname").val(),
+            getlastname = $("#lastname").val(),
+            getfavcolor = $("favcolor").val(),
+            getfavfruits = $("#favfruits").val();
+
+          $("#firstnamerst").html("<b>First Name</b>" + getfirstname);
+          $("#lastnamerst").html("<b>Last Name</b>" + getlastname);
+          $("#favcolorrst").html("<b>Fav Color</b>" + getfavcolor);
+          $("#favfruitsrst").html("<b>Fav Fruits</b>" + getfavfruits);
+        }
+        /*  $("#firstname").change(showresult);
+        $("#lastname").change(showresult);
+        $("#favcolor").change(showresult);
+        $("#favfruits").change(showresult); */
+
+        $(".form-control").change(showresult);
+      });
+    </script>
+  </body>
+</html>

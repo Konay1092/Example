@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Transform Scale</title>
+  </head>
+  <style type="text/css">
+    .container {
+      width: 1000px;
+      background: grey;
+    }
+
+    .container .move {
+      width: 150px;
+      height: 60px;
+      background: red;
+      color: #fff;
+      font-size: 20px;
+
+      margin: 20px 0;
+
+      text-align: center;
+      line-height: 60px;
+    }
+
+    #scale:hover {
+      /*0 to 1*/
+      /*scale(xy)*/
+      /*transform: scale(0);*/
+      /*transform:scale(2);*/
+      transform: scale(3);
+    }
+    #scalexy:hover {
+      transform: scale(1, 1);
+      background-color: aqua;
+    }
+    #scalex:hover {
+      transform: scaleX(4);
+      background-color: blue;
+    }
+    #scaley:hover {
+      transform: scaleY(4);
+      background-color: chartreuse;
+    }
+    img {
+      width: 200px;
+      display: block;
+      margin: auto;
+      transition: transform 3s;
+    }
+    img:hover {
+      transform: scaleY(5);
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div id="scale" class="move">Scale Me</div>
+    </div>
+
+    <div class="container">
+      <div id="scalexy" class="move">Scale X,Y</div>
+    </div>
+
+    <div class="container">
+      <div id="scalex" class="move">Scale X</div>
+    </div>
+
+    <div class="container">
+      <div id="scaley" class="move">Scale Y</div>
+    </div>
+    <hr />
+    <img src="/image/ab.jpg" alt="" />
+  </body>
+</html>
+
+<!-- 
+    1 is default
+scale()
+scale(x,y) x>horizointal y>vertical
+scleX(x)
+scaleY(y)
+ -->
